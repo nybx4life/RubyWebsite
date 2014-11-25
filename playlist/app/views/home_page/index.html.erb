@@ -1,0 +1,14 @@
+<h1>Music Playlist</h1>
+<h2>List all songs</h2>
+ 			<h3><%= form_for  :song,  :url => {:action => :list} do |form| %>
+ 			<p><%= submit_tag   "List Songs" %></p></h3>
+<% end %>
+<h2>Find a song</h2>
+<h3><%= form_for  :song, :url => {:action => :find} do |form| %>
+<p><label for="title">Name:</label>
+<%= form.text_field  :name, :size => 20 %></p>
+<p><%= submit_tag   "Find a Song" %></p></h3>
+
+<h3> Listen to your Playlist: </h3>
+<h3> <a href = "http://www.youtube.com/watch?v=2u_YrOtAXFY&list=PLnZC4_ie0EuMJ6ASW-gkBPURP1z-y6ktL">Click Me!</a>
+<% end %>

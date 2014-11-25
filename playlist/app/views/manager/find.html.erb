@@ -1,0 +1,26 @@
+<table class="center">
+<tr>
+<th>ID</th>
+<th>Image</th>
+<th>Name</th>
+<th>Artist</th>
+<th>Album</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<td><%= @song.id %></td>
+<td><%= @song.image %></td>
+<td><%= @song.name %></td>
+<td><%= @song.artist %></td>
+<td><%= @song.album %></td>
+<td><%= link_to 'Show', @song %></td>
+<td><%= link_to 'Edit', edit_product_path(@song) %></td>
+<td><%= link_to 'Destroy', @song, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+</table>
+
+<br />
+<%= link_to 'Back', manager_index_path %>
